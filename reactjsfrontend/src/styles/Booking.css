@@ -1,0 +1,188 @@
+#logo {
+    border: 1px solid black;
+    height: 82px;
+    width: 140px;
+    margin: 8px;
+    float: left;
+
+}
+
+#menu-navigation {
+    border: 1px solid black;
+    height: 82px;
+    width: 300px;
+    margin: 8px;
+    float: right;
+    text-align: center;
+}
+
+#advertisement-banner {
+    border: 1px solid black;
+    height: 82px;
+    width: 730px;
+    text-align: center;
+    margin: 8px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+
+#advertisement-banner p {
+    animation: slide-in 120s linear infinite; /* Increased duration */
+    position: absolute;
+    left: 0;
+    width: 100%;
+
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    5% { /* Adjusted fade-in point */
+        opacity: 1;
+    }
+    95% { /* Adjusted fade-out point */
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+#container {
+    border: 1px solid black;
+    height: 750px !important;
+    width: auto;
+    background-color: #F0F0F0;
+}
+
+#content {
+    border: 1px solid darkgray;
+    height: 550px;
+    position: relative;
+}
+
+#booking{
+    border: 1px solid darkgray;
+    height: 510px;
+    width: 300px;
+    margin: 8px;
+    float: left;
+    color: black;
+}
+#booking-view-section{
+    border: 1px solid lightsalmon;
+    height: 530px;
+    width: 1220px;
+    margin: 8px;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+}
+#buttons-container {
+    display: flex;
+    flex-direction: column; /* Arrange buttons in a column */
+    justify-content: space-around; /* Distribute space between buttons */
+    align-items: flex-start; /* Align buttons to the start */
+    padding-left: 20px; /* Add padding to the left */
+    height: 100%;
+    color: black;
+}
+
+#buttons-container > div {
+    margin: 10px 0; /* Add margin between each button */
+}
+
+#booked-tickets, #cancel-tickets, #search-ticket, #print-ticket {
+    width: 200px;
+    border: 1px solid black;
+    box-sizing: border-box; /* Include padding in the width */
+    padding: 10px 20px; /* Adds space inside the button */
+    background-color: gray;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#view {
+    border: 1px solid darkgray;
+    height: 510px;
+    width: 870px;
+    margin: 8px;
+    float: right;
+}
+#view-container {
+    display: flex;
+    flex-direction: column; /* Arrange buttons in a column */
+    justify-content: space-around; /* Distribute space between buttons */
+    align-items: flex-start; /* Align buttons to the start */
+    left: 0; /* Add padding to the left */
+    height: 100%;
+    width: 100%;
+    float: left;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: black;
+}
+#header-row, #ticket-row-1, #ticket-row-2, #ticket-row-3 {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #555;
+
+}
+#header-row {
+    font-weight: bold;
+    background-color: #444;
+    color: #ccc;
+    margin-left: 150px;
+    width: 600px;
+}
+
+#column-empty, #ticket-info-1, #ticket-info-2, #ticket-info-3 {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start;
+    padding-left: 20px;
+}
+
+#ticket-info-1 span, #ticket-info-2 span, #ticket-info-3 span {
+    background-color: gray;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+#column-source, #column-destination, #column-amount, #column-travel-date,
+#source-1, #destination-1, #amount-1, #travel-date-1,
+#source-2, #destination-2, #amount-2, #travel-date-2,
+#source-3, #destination-3, #amount-3, #travel-date-3,
+#column-action, #action-1, #action-2, #action-3 {
+    flex: 1;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+#details-button-1, #details-button-2, #details-button-3 {
+    padding: 10px 15px;
+    background-color: transparent;
+    color: gray;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#details-button-1:hover, #details-button-2:hover, #details-button-3:hover {
+    background-color: gray;
+    border-color: black;
+}
+
+
+

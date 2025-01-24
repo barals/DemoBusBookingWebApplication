@@ -1,0 +1,105 @@
+/* Root View */
+#root {
+    border: 1px solid black; /* Optional, for debugging layout */
+    min-height: 100vh; /* Ensures the root element spans the full viewport height */
+    width: 100vw; /* Ensures the width matches the full viewport width */
+    display: flex; /* Enables a flexible box layout */
+    flex-direction: column; /* Aligns child elements vertically (header, main, footer) */
+    background-color: #F0F0F0; /* Sets a neutral background color */
+    box-sizing: border-box; /* Includes padding and borders in width/height calculations */
+    overflow: hidden; /* Prevents both vertical and horizontal scrolling */
+}
+/* Media Query for Small Screens (Up to 768px, Mobile and Small Tablets) */
+@media (max-width: 768px) {
+    #root {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #container-radio-button,
+    #container-fare-distance,
+    #container-search-book {
+        width: 100%; /* Full width for small screens */
+        height: auto; /* Adjust height dynamically */
+        margin-bottom: 15px;
+    }
+
+    #radio-button-one-way, #radio-button-return {
+        width: 100%; /* Full width for buttons */
+        margin: 5px 0; /* Spacing between buttons */
+    }
+
+    #station-button, #search-button {
+        width: 100%; /* Full width for buttons */
+        height: auto; /* Adjust height */
+    }
+}
+
+/* Media Query for Laptops and Desktops (768px to 1440px) */
+@media (min-width: 768px) and (max-width: 1440px) {
+    #container-radio-button,
+    #container-fare-distance,
+    #container-search-book {
+        width: calc(50% - 20px); /* Half the width with spacing */
+        height: auto; /* Adjust height dynamically */
+        margin: 10px;
+    }
+
+    #radio-button-one-way, #radio-button-return {
+        width: calc(50% - 10px); /* Half width for side-by-side layout */
+        height: 50px; /* Fixed height for consistency */
+        margin: 5px;
+    }
+
+    #station-button, #search-button {
+        width: 90%; /* Reduce width slightly */
+        height: auto; /* Adjust height */
+    }
+}
+
+/* Media Query for Large Monitors (1440px to 2560px) */
+@media (min-width: 1440px) and (max-width: 2560px) {
+    #MainComponents {
+        padding: 2%; /* Adequate padding for larger screens */
+    }
+
+    #container-radio-button,
+    #container-fare-distance,
+    #container-search-book {
+        width: calc(40% - 20px); /* Reduce width slightly */
+        height: auto; /* Adjust height dynamically */
+    }
+
+    #radio-button-one-way, #radio-button-return {
+        width: calc(40% - 10px); /* Reduce width slightly */
+        font-size: 1.1rem; /* Adjust font size for readability */
+    }
+}
+
+/* Media Query for Ultra-Wide and 4K Screens (2560px and above) */
+@media (min-width: 2560px) {
+    #MainComponents {
+        padding: 3%; /* Increased padding for spacious layout */
+    }
+
+    #container-radio-button,
+    #container-fare-distance,
+    #container-search-book {
+        width: calc(35% - 30px); /* Reduce width slightly */
+        height: auto; /* Adjust height dynamically */
+    }
+
+    #radio-button-one-way, #radio-button-return {
+        width: calc(40% - 10px); /* Adjust width */
+        font-size: 1.5rem; /* Larger font size for better visibility */
+    }
+
+    #station-button, #search-button {
+        width: 80%; /* Center and reduce size */
+        font-size: 1.2rem; /* Larger font size */
+    }
+}
+
+
+
+

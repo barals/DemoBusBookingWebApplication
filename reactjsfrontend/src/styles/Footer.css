@@ -1,0 +1,45 @@
+/* Root View */
+#root {
+    border: 1px solid black; /* Optional, for debugging layout */
+    min-height: 100vh; /* Ensures the root element spans the full viewport height */
+    width: 100vw; /* Ensures the width matches the full viewport width */
+    display: flex; /* Enables a flexible box layout */
+    flex-direction: column; /* Aligns child elements vertically (header, main, footer) */
+    background-color: #F0F0F0; /* Sets a neutral background color */
+    box-sizing: border-box; /* Includes padding and borders in width/height calculations */
+    overflow: hidden; /* Prevents both vertical and horizontal scrolling */
+    margin: 0; /* Removes default browser margin */
+    padding: 0; /* Removes default browser padding */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #root {
+        border: none; /* Remove border for smaller screens */
+    }
+}
+
+@media (min-width: 2560px) {
+    #root {
+        margin: 0 auto; /* Center content on ultra-wide screens */
+    }
+}
+#Footer {
+
+}
+/* Footer Config */
+/* Main Content */
+#MainComponents {
+    flex-grow: 1; /* This ensures the main content grows to take up available space */
+}
+
+/* Footer */
+#Footer {
+    background-color: #F0F0F0;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto; /* Ensures the footer always stays at the bottom */
+    width: 100%;
+
+}

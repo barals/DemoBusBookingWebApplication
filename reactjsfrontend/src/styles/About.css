@@ -1,0 +1,68 @@
+
+#main-container{
+    border: 1px solid black;
+    height: 640px;
+    background-color: #F0F0F0;
+}
+
+
+#main-content{
+    border: 1px solid darkgray;
+    height: 440px;
+    color: black;
+}
+
+#logo{
+    border: 1px solid black;
+    height: 82px;
+    width: 140px;
+    margin: 8px;
+    float: left;
+
+}
+#menu-navigation{
+    border: 1px solid black;
+    height: 82px;
+    width: 350px;
+    margin: 8px;
+    float: right;
+
+}
+
+#login_header_label{
+    /*border: 1px solid black ;
+    text-align: center;
+    margin-left: 400px;
+    margin-top: 100px;
+    margin-right: 300px;*/
+}
+
+#login_div{
+    border: 1px solid black;
+    text-align: center;
+    margin-left: 100px;
+    margin-top: 100px;
+    margin-right: 100px;
+
+}
+
+#login_username_password{
+
+}
+
+#login_button{
+    /*border: 1px solid black;*/
+}
+
+#back_button{
+    float: left;
+    border: 1px solid green;
+    margin-left: 400px;
+}
+#submit_button{
+    float: right;
+    border: 1px solid green;
+    margin-right: 400px;
+}
+
+
