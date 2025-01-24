@@ -9,6 +9,8 @@ Real-Time Seat Availability: Ensures accurate seat deduction with transactional 
 Concurrency Management: Handles high-demand bookings without data conflicts.
 Admin Dashboard: Manage buses, schedules, and bookings.
 User-Friendly API: Provides endpoints for seamless integration with external applications.
+
+
 🛠️ Tech Stack
 Backend: Python 3, Django Framework
 Frontend: HTML5, CSS3, JavaScript with ReactJsintegration
