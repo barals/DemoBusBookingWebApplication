@@ -1,0 +1,4 @@
+# PyCharm configuration files and directories
+.idea/
+*.iml
+*.sqlite3
