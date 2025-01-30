@@ -33,8 +33,10 @@ urlpatterns = [
     # Ticket Booking APIView
     # ---------------------
     path('ticket_booking/', TicketBookingAPIView.as_view(), name='ticket_booking'),
+    path('ticket_booking/<int:pk>/', TicketBookingAPIView.as_view(), name='ticket_booking_resource_id'),
     # ----------------------
     # Ticket Cancel APIView
     # -----------------------
     path('ticket_cancel/', TicketCancelAPIView.as_view(), name='ticket_cancel'),
+    path('ticket_cancel/<int:pk>/', TicketCancelAPIView.as_view(), name='ticket_cancel_resource_id'),
 ]
